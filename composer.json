@@ -1,0 +1,39 @@
+{
+  "name": "dyjh/hyperf-mongo",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dyjh",
+      "email": "953068028@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "psr/container": "^1.0",
+    "mongodb/mongodb": "^1.5"
+  },
+  "require-dev": {
+  },
+  "suggest": {
+    "hyperf/di": "required hyperf/di >=2.0.0",
+    "hyperf/pool": "required hyperf/pool >=2.0.0",
+    "hyperf/cache": "required hyperf/cache >=2.0.0",
+    "hyperf/utils": "required hyperf/utils >=2.0.0",
+    "hyperf/contract": "required hyperf/contract >=2.0.0",
+    "hyperf/command": "required hyperf/command >=2.0.0",
+    "hyperf/config": "required hyperf/config >=2.2.0",
+    "hyperf/task": "required hyperf/task >=1.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phper666\\MongoDb\\": "src/"
+    },
+    "files": [
+    ]
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Phper666\\MongoDb\\ConfigProvider"
+    }
+  }
+}
