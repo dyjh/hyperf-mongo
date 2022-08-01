@@ -22,7 +22,7 @@
     "hyperf/utils": "required hyperf/utils >=2.0.0",
     "hyperf/contract": "required hyperf/contract >=2.0.0",
     "hyperf/command": "required hyperf/command >=2.0.0",
-    "hyperf/config": "required hyperf/config >=2.2.0",
+    "hyperf/config": "required hyperf/config >=2.2.0"
   },
   "autoload": {
     "psr-4": {
