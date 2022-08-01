@@ -33,7 +33,7 @@
   },
   "extra": {
     "hyperf": {
-      "config": "Phper666\\MongoDb\\ConfigProvider"
+      "config": "Dyjh\HyperfMongo\ConfigProvider"
     }
   }
 }
