@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-use Dyjh\MongoDb\MongoDbMigration;
+use Dyjh\Mongo\MongoDbMigration;
 
 class DummyClass extends MongoDbMigration
 {
     /**
-     * @throws \Dyjh\MongoDb\Exception\MongoDBException
+     * @throws \Dyjh\Mongo\Exception\MongoDBException
      */
     public function up()
     {
@@ -13,7 +13,7 @@ class DummyClass extends MongoDbMigration
     }
 
     /**
-     * @throws \Dyjh\MongoDb\Exception\MongoDBException
+     * @throws \Dyjh\Mongo\Exception\MongoDBException
      */
     public function down()
     {

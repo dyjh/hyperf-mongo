@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Dyjh\MongoDb\Pool;
+namespace Dyjh\Mongo\Pool;
 
 
 use Hyperf\Di\Container;

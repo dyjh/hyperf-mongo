@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Dyjh\MongoDb\Command\Migrations;
+namespace Dyjh\Mongo\Command\Migrations;
 
 class TableGuesser
 {

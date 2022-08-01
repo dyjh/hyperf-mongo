@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Dyjh\MongoDb\Command\Migrations;
+namespace Dyjh\Mongo\Command\Migrations;
 
 use Hyperf\Command\Annotation\Command;
 use Hyperf\Di\Annotation\Inject;
@@ -40,7 +40,7 @@ class MigrationCommand extends BaseCommand
      * The migration creator instance.
      *
      * @Inject()
-     * @var \Dyjh\MongoDb\Command\Migrations\MigrationCreator
+     * @var \Dyjh\Mongo\Command\Migrations\MigrationCreator
      */
     protected $creator;
 

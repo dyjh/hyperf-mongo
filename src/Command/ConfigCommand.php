@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Dyjh\MongoDb\Command;
+namespace Dyjh\Mongo\Command;
 
 use Hyperf\Command\Annotation\Command;
 use Hyperf\Command\Command as HyperfCommand;

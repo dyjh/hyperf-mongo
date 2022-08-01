@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Dyjh\MongoDb\Utils\Contract;
+namespace Dyjh\Mongo\Utils\Contract;
 /**
  * Interface Arrayable
  */

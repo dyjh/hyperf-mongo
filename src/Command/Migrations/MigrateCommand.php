@@ -10,12 +10,12 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Dyjh\MongoDb\Command\Migrations;
+namespace Dyjh\Mongo\Command\Migrations;
 
 use Hyperf\Command\Annotation\Command;
 use Hyperf\Command\ConfirmableTrait;
 use Hyperf\Di\Annotation\Inject;
-use Dyjh\MongoDb\MongoDbConnection;
+use Dyjh\Mongo\MongoDbConnection;
 use Symfony\Component\Console\Input\InputOption;
 /**
  * @Command()

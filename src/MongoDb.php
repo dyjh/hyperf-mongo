@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
-namespace Dyjh\MongoDb;
+namespace Dyjh\Mongo;
 
 use Hyperf\Task\Annotation\Task;
 use MongoDB\BSON\JavascriptInterface;
 use MongoDB\Operation\Explainable;
-use Dyjh\MongoDb\Exception\MongoDBException;
-use Dyjh\MongoDb\Pool\PoolFactory;
+use Dyjh\Mongo\Exception\MongoDBException;
+use Dyjh\Mongo\Pool\PoolFactory;
 use Hyperf\Utils\Context;
-use Dyjh\MongoDb\Utils\Arr;
+use Dyjh\Mongo\Utils\Arr;
 
 /**
  * Class MongoDb
