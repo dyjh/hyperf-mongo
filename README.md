@@ -3,7 +3,7 @@
 ### 使用
 #### 1、拉取包
 ```
-composer require dyjh/hyperf-mongo
+composer require dyjh/mongo
 ```
 #### 2、发布配置
 ```
