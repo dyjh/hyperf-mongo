@@ -10,7 +10,8 @@
   "require": {
     "php": ">=8.0",
     "psr/container": ">=1.0",
-    "mongodb/mongodb": ">=1.5"
+    "mongodb/mongodb": ">=1.5",
+    "hyperf/task": ">=2.0"
   },
   "require-dev": {
   },
@@ -22,7 +23,6 @@
     "hyperf/contract": "required hyperf/contract >=2.0.0",
     "hyperf/command": "required hyperf/command >=2.0.0",
     "hyperf/config": "required hyperf/config >=2.2.0",
-    "hyperf/task": "required hyperf/task >=1.1.0"
   },
   "autoload": {
     "psr-4": {
