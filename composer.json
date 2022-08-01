@@ -33,7 +33,7 @@
   },
   "extra": {
     "hyperf": {
-      "config": "Dyjh\HyperfMongo\ConfigProvider"
+      "config": "Dyjh\\HyperfMongo\\ConfigProvider"
     }
   }
 }
