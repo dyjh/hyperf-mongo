@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
-namespace Phper666\MongoDb\Example\Migrations;
+namespace Dyjh\HyperfMongo\Example\Migrations;
 /**
  * Created by PhpStorm.
  * User: liyuzhao
  * Date: 2019-12-23
  * Time: 13:21
  */
-use Phper666\MongoDb\MongoDbMigration;
+use Dyjh\HyperfMongo\MongoDbMigration;
 class CreateTestCollection extends MongoDbMigration
 {
     /**
      * 支持很多方法，请详细去看MongoDbMigration这个类
-     * @throws \Phper666\MongoDb\Exception\MongoDBException
+     * @throws \Dyjh\HyperfMongo\Exception\MongoDBException
      */
     public function up()
     {
@@ -31,7 +31,7 @@ class CreateTestCollection extends MongoDbMigration
 
     /**
      * 迁移失败时会执行
-     * @throws \Phper666\MongoDb\Exception\MongoDBException
+     * @throws \Dyjh\HyperfMongo\Exception\MongoDBException
      */
     public function down()
     {

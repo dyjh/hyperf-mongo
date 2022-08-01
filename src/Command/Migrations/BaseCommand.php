@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Phper666\MongoDb\Command\Migrations;
+namespace Dyjh\HyperfMongo\Command\Migrations;
 
 use Hyperf\Command\Command;
 use Hyperf\Contract\ConfigInterface;
