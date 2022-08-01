@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Phper666\MongoDb;
+namespace Dyjh\MongoDb;
 
 use Hyperf\Contract\ConnectionInterface;
 use MongoDB\BSON\JavascriptInterface;
@@ -8,7 +8,7 @@ use MongoDB\Client;
 use MongoDB\Collection;
 use MongoDB\Database;
 use MongoDB\Operation\Explainable;
-use Phper666\MongoDb\Exception\MongoDBException;
+use Dyjh\MongoDb\Exception\MongoDBException;
 use Hyperf\Pool\Connection;
 use Hyperf\Pool\Exception\ConnectionException;
 use Hyperf\Pool\Pool;
@@ -19,7 +19,7 @@ use MongoDB\Driver\Exception\Exception;
 use MongoDB\Driver\Exception\InvalidArgumentException;
 use MongoDB\Driver\Exception\RuntimeException;
 use MongoDB\Driver\Manager;
-use Phper666\MongoDb\Utils\Arr;
+use Dyjh\MongoDb\Utils\Arr;
 use Psr\Container\ContainerInterface;
 
 class MongoDbConnection extends Connection implements ConnectionInterface

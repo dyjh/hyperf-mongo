@@ -1,5 +1,5 @@
 {
-  "name": "dyjh/hyperf-mongo",
+  "name": "dyjh/mongo",
   "license": "MIT",
   "authors": [
     {
@@ -26,14 +26,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Dyjh\\HyperfMongo\\": "src/"
+      "Dyjh\\Mongo\\": "src/"
     },
     "files": [
     ]
   },
   "extra": {
     "hyperf": {
-      "config": "Dyjh\\HyperfMongo\\ConfigProvider"
+      "config": "Dyjh\\Mongo\\ConfigProvider"
     }
   }
 }
