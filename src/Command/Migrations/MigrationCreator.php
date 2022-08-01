@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Dyjh\HyperfMongo\Command\Migrations;
+namespace Phper666\MongoDb\Command\Migrations;
 
 use Closure;
 use Hyperf\Utils\Filesystem\Filesystem;

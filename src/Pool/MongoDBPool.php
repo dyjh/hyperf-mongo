@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace Dyjh\HyperfMongo\Pool;
+namespace Phper666\MongoDb\Pool;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ConnectionInterface;
-use Dyjh\HyperfMongo\MongoDbConnection;
+use Phper666\MongoDb\MongoDbConnection;
 use Hyperf\Pool\Pool;
 use Hyperf\Utils\Arr;
 use Psr\Container\ContainerInterface;
@@ -46,7 +46,7 @@ class MongoDBPool extends Pool
 
     /**
      * @return ConnectionInterface
-     * @throws \Dyjh\HyperfMongo\Exception\MongoDBException
+     * @throws \Phper666\Mongodb\Exception\MongoDBException
      */
     protected function createConnection(): ConnectionInterface
     {

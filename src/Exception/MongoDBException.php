@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Dyjh\HyperfMongo\Exception;
+namespace Phper666\MongoDb\Exception;
 
 use Throwable;
 

@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Dyjh\HyperfMongo\Utils;
+namespace Phper666\MongoDb\Utils;
 
 /**
  * Created by PhpStorm.
@@ -10,7 +10,7 @@ namespace Dyjh\HyperfMongo\Utils;
  */
 
 use Closure;
-use Dyjh\HyperfMongo\Utils\Contract\Arrayable;
+use Phper666\MongoDb\Utils\Contract\Arrayable;
 
 class Arr
 {

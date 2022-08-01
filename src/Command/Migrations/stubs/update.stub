@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-use Dyjh\HyperfMongo\MongoDbMigration;
+use Phper666\MongoDb\MongoDbMigration;
 
 class DummyClass extends MongoDbMigration
 {
     /**
-     * @throws \Dyjh\HyperfMongo\Exception\MongoDBException
+     * @throws \Phper666\MongoDb\Exception\MongoDBException
      */
     public function up()
     {
@@ -13,7 +13,7 @@ class DummyClass extends MongoDbMigration
     }
 
     /**
-     * @throws \Dyjh\HyperfMongo\Exception\MongoDBException
+     * @throws \Phper666\MongoDb\Exception\MongoDBException
      */
     public function down()
     {

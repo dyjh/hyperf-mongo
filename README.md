@@ -50,13 +50,13 @@ php bin/hyperf.php mongodb:migration Test
 ```
 <?php
 declare(strict_types=1);
-namespace Dyjh\HyperfMongo\Example\Migrations;
-use Dyjh\HyperfMongo\MongoDbMigration;
+namespace Phper666\MongoDb\Example\Migrations;
+use Phper666\MongoDb\MongoDbMigration;
 class CreateTestCollection extends MongoDbMigration
 {
     /**
      * 支持很多方法，请详细去看MongoDbMigration这个类
-     * @throws \Dyjh\HyperfMongo\Exception\MongoDBException
+     * @throws \Phper666\MongoDb\Exception\MongoDBException
      */
     public function up()
     {
@@ -75,7 +75,7 @@ class CreateTestCollection extends MongoDbMigration
 
     /**
      * 迁移失败时会执行
-     * @throws \Dyjh\HyperfMongo\Exception\MongoDBException
+     * @throws \Phper666\MongoDb\Exception\MongoDBException
      */
     public function down()
     {
@@ -92,13 +92,13 @@ php bin/hyperf.php mongodb:migrate
 1、上面能像orm一样能进行迁移了，解决了升级的问题，下面我们来说一下开发时候怎么使用   
 2、在你的项目里面新建一个目录，该目录叫mongo(自行命名，类似orm的model)  
 3、比如我现在项目里面有一个库，叫test，test里面有两个collection，名字为co1,co2(你把它当成mysql的表一样)   
-4、我在mongo目录新建两个文件，叫Co1Mongo和Co2Mongo，都继承\Dyjh\HyperfMongo\MongoDb   
+4、我在mongo目录新建两个文件，叫Co1Mongo和Co2Mongo，都继承\Phper666\MongoDb\MongoDb   
 ```
 <?php
 declare(strict_types=1);
 namespace TmgAddons\WebQySession\Admin\Mongo;
 
-use Dyjh\HyperfMongo\MongoDb;
+use Phper666\MongoDb\MongoDb;
 class TestMongo extends MongoDb
 {
     /**
@@ -135,7 +135,7 @@ class TestController
     /**
      * @GetMapping(path="")
      * @return array
-     * @throws \Dyjh\HyperfMongo\Exception\MongoDBException
+     * @throws \Phper666\MongoDb\Exception\MongoDBException
      */
     public function test()
     {
@@ -145,11 +145,11 @@ class TestController
 
 调用test方法时，就能查出co1表中的一条数据了，是不是很简单！
 ```
-6、支持有多种方法，详细你可以到Dyjh\HyperfMongo\MongoDb查看，或者你可以去看官方的php-mongodb文档，https://docs.mongodb.com/php-library/v1.5/reference/method/MongoDBCollection-createIndexes/
+6、支持有多种方法，详细你可以到Phper666\MongoDb\MongoDb查看，或者你可以去看官方的php-mongodb文档，https://docs.mongodb.com/php-library/v1.5/reference/method/MongoDBCollection-createIndexes/
 #### 8、结束
 如果你有使用的问题或者建议，欢迎你提一个isset，由于太匆忙，等我开发完现在的项目，我会重新优化和迭代这个包，如果开发中有遇到问题或者有更好的写法，我会迭代到这个包这里。
 #### 9、注意
 如果你使用的是mongodb默认生成_id,那么更新和删除我默认已经帮你使用MongoDB\BSON\ObjectId进行了转换，所以你无需再转换，你直接把_id对应的字符串传进去就好了，比如要根据_id获取某条数据，$filter=['_id' => 'xxxxxx']即可。获取数据时，我也默认帮你把_id转成了字符串
 
 #### 10、遇到问题
-1、因为我使用了hyperf框架，所以基本都是单例模式。我model里面使用\Dyjh\HyperfMongo\MongoDb 的setCollectionName方法来切换表时，必须处理完逻辑后然后再切回原始的collectionName，否则你查询的会是你切换的表
+1、因为我使用了hyperf框架，所以基本都是单例模式。我model里面使用\Phper666\MongoDb\MongoDb 的setCollectionName方法来切换表时，必须处理完逻辑后然后再切回原始的collectionName，否则你查询的会是你切换的表

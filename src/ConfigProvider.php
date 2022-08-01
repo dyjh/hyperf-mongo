@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Dyjh\HyperfMongo;
+namespace Phper666\MongoDb;
 
 class ConfigProvider
 {
