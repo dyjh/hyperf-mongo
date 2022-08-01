@@ -8,9 +8,9 @@
     }
   ],
   "require": {
-    "php": ">=7.2",
-    "psr/container": "^1.0",
-    "mongodb/mongodb": "^1.5"
+    "php": ">=8.0",
+    "psr/container": ">=1.0",
+    "mongodb/mongodb": ">=1.5"
   },
   "require-dev": {
   },
